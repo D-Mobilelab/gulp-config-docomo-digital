@@ -58,7 +58,7 @@ gulp.task('hybrid:installnpmmodules', ['hybrid:initpath'], function(done){
 gulp.task('hybrid:transformindex', ['loadconfig', 'loaddict', 'loadfooter', 'hybrid:copymanifest'], function(){
     return gulp.src('app/' + base.indexPage)
     .pipe(removecode({ stage: true, hybrid: true }))
-    .pipe(replace('<TMPL_VAR NAME=CONFIG>', JSON.stringify(vhost)))
+    .pipe(replace('<TMPL_VAR NAME=CONFIG>', JSON.stringify(base.vhost)))
     .pipe(replace('<TMPL_VAR NAME=CONFIGOVERRIDEHYBRID>', JSON.stringify(base.vhostCustom.config)))
     .pipe(replace('<TMPL_VAR NAME=DICTIONARY>', JSON.stringify(base.dict)))
     .pipe(replace('<TMPL_VAR NAME=FOOTER_LINKS>', JSON.stringify(base.footer)))
