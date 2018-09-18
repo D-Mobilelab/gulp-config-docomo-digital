@@ -1,5 +1,7 @@
 # gulp-config-docomo-digital
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/D-Mobilelab/gulp-config-docomo-digital.svg)](https://greenkeeper.io/)
+
 ## setup
 
 Copy **example/local.json** from this repository to **js/gulp/local.json**.
