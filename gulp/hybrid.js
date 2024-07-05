@@ -12,7 +12,7 @@ var useref = require('gulp-useref');
 var cleanCSS = require('gulp-clean-css');
 var sourcemaps = require('gulp-sourcemaps');
 var ngAnnotate = require('gulp-ng-annotate');
-var uglify = require('gulp-uglify');
+var uglify = require('gulp-terser');
 var rev = require('gulp-rev');
 var revReplace = require('gulp-rev-replace');
 
